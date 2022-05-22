@@ -1,0 +1,276 @@
+/* Adjustment of content box */
+body{
+    background: #121212;
+    color: white;
+}
+header{
+     margin-top: 30px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+}
+main{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*End of adjustment */
+/* Home Page Styling */
+.head{
+    /* It will creat all the content in a one row and creat a distance between them */
+    display: flex;
+    justify-content: space-between;
+}
+.head h2{
+    margin: 0;
+    font-size: 65px;
+}
+/* Span will affect all the span tag in this website */
+span{
+    color: #00FBFF;
+}
+/* */
+/* styling to the navagation bar */
+nav{
+    display: flex;
+}
+.head li{
+    /* list style none will remove all the syle of that that list like numbers bullets etc */
+    list-style: none;
+    padding: 1.1rem;
+}
+.head li a{
+    font-size: 33px;
+    color: white;
+    text-decoration: none;
+}
+.head li a:hover{
+    color: #00FBFF;
+}
+/* finesh of navagation bar */
+/* Start of main tag */
+/* Body of home page */
+.home_page{
+    display: flex;
+    justify-content: space-between;
+}
+.we_have h1{
+    font-size: 70px;
+    margin-top: 120px;
+}
+.h_list li{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+/*End Body of Home Page */
+/* This will affect all the horizontal line in this page */
+hr{
+    margin: 40px 0;
+    background: #00FBFF;
+    height: 1px;
+}
+/* */
+/* Start of Notes styling */
+.note .subject_box{
+    display: flex;
+    margin-bottom: 20px;
+}
+/* This h2 will affect all the h2 in this web page */
+h2{
+    font-size: 45px;
+}
+/* */
+/* creating a box */
+.subject_box .n_s_box{
+    background: #000000;
+    width: 380px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+/* Inside Box */
+.subject_box a:hover{
+    color:#00FBFF;
+}
+.subject_box a{
+    color: white;
+    text-decoration: none;
+}
+.n_s_box h3 {
+    font-size: 30px;
+}
+.n_s_box li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+/* Box end */
+/* End of Notes styling */
+/* Start of assignment */
+.ass_box{
+    background: #000000;
+    border: 1px solid #00FBFF;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 2px 2px #00FBFF;
+    margin-bottom: 35px;
+}
+.assignment a{
+    text-decoration: none;
+}
+.ass_box .ass_box_text h4{
+    font-size: 40px;
+    margin: 0 0 40px 25px;
+}
+.ass_box .ass_box_text em{
+    font-size: 24px;
+    margin: 0 25px;
+}
+.assignment .ass_box_img img{
+    width: 180px;
+}
+.assignment .ass_box:hover{
+    border-color: #12FF00;
+}
+/*End of assignment */
+/* Start of Question */
+.Q_break{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.qu_box{
+    background: white;
+    width: 40%;
+    border-radius: 25px;
+    padding: 20px;
+}
+.qu_box .qu_img img{
+    width: 100%;
+}
+.qu_box .qu_down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+.qu_box .qu_down img{
+    width: 100px;
+}
+.qu_box .qu_down h3{
+    font-size: 40px;
+}
+.qu_box a{
+    text-decoration: none;
+}
+.qu_box .qu_down:hover{
+    color: #12FF00;
+}
+/*End of Question part */
+/*Start of Footer */
+footer{
+    background: #394647;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+footer h4{
+    font-size: 16px;
+    margin: 18px 25px;
+}
+/* End for 14 inch laptop */
+/* Now start responsive design for mobile */
+@media all and (max-width: 600px) {
+    /* Adjustment of header */
+    header{
+            margin-top: 10px;
+   }
+   .head h2{
+       margin-top: 13px;
+       font-size: 17px;
+   }
+   .head li a{
+       font-size: 11px;
+   }
+   .head li{
+       margin-top: 7px;
+       padding: 7px;
+   }
+   .we_have h1{
+        font-size: 140%;
+        margin-top: 120px;
+    }
+    .h_img{
+        position: relative;
+        margin-top: 120px;
+    }
+    .h_img img{
+        width: 150px;
+    }
+    /*Header end */
+    /* Main page */
+    .h_list li{
+        font-size: 10px;
+    }
+    .h_list ol{
+        padding-left: 12px;
+    }
+    /* End of main */
+    /* Start of Notes */
+    h2{
+        font-size: 25px;
+    }
+    .note .subject_box{
+        display: block;
+    }
+    .subject_box .n_s_box{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .n_s_box h3{
+        font-size: 20px;
+    }
+    .n_s_box li{
+        font-size: 12px;
+    }
+    /* End of notes */
+    /* Start of asignment */
+    .ass_box .ass_box_text h4{
+        margin: 8% 12%;
+        font-size: 17px;
+    }
+    .ass_box .ass_box_text em{
+        font-size: 15px;
+    }
+    .assignment .ass_box_img img{
+        margin-top: 13px;
+        width: 80px;
+    }
+    .ass_box{
+        padding: 3px;
+    }
+    /*End of asignment */
+    .Q_break{
+        display: block;
+    }
+    .qu_box{
+        width: 70%;
+        margin: 0 auto 10% auto;
+    }
+    .qu_box .qu_down h3{
+        font-size: 149%;
+    }
+    .qu_box .qu_down img{
+        width: 70px;
+    }
+    /* End of asignment */
+    /* Start of a footer */
+    footer h4{
+        font-size: 8px;
+        margin: 8px;
+    }
+  }
